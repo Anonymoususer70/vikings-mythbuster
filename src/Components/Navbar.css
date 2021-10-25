@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.burger-div{
+    display: none;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'Norse';
+    src: url('../Fonts/Norse.woff2') format('woff2'),
+        url('../Fonts/Norse.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NorseBold';
+    src: url('../Fonts/Norse-Bold.woff2') format('woff2'),
+        url('../Fonts/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+.nav-links > a{
+    padding-left: 15px;
+    padding-top: 36px;
+    text-decoration: none;
+    font-size: 1.7em;
+    font-family: "NorseBold", sans-serif;
+    color: #7e5b32;
+}
+
+.logo img{
+    width: 80px;
+    height: 80px;
+    animation: logoRotator linear 4s infinite;
+}
+
+.logo{
+    position: absolute;
+    left: 8px;
+    top: 9px;
+}
+
+@keyframes logoRotator {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 780px){
+    .burger-div{
+        display: block;
+    }
+    
+    .burger{
+        text-align: center;
+        color: #7e5b32;
+        position: absolute;
+        right: 20px;
+        top: 30px;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    #hidden{
+        display: flex;
+        position: absolute;
+        right: 0px;
+        top: 90px;
+        max-height: 240px;
+        width: 100%;
+        background-color: #f7fbdf;
+        flex-direction: column;
+        align-items: center;
+        justify-content: right;
+    }
+
+    #hidden a{
+        color: #ac865c;
+        padding-top: 5px;
+        padding-bottom: 30px;
+        text-decoration: none;
+        font-family: "NorseBold", sans-serif;
+        font-size: 1.4rem;
+    }
+}

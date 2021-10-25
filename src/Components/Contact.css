@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'NorseBold';
+    src: url('../Fonts/Norse-Bold.woff2') format('woff2'),
+        url('../Fonts/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+.contact-section{
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7fbdf;
+}
+
+.contact-text{
+    margin-bottom: 40px;
+}
+
+.contact-text h1{
+    font-family: "NorseBold", sans-serif;
+    color: #7d674e;
+    font-size: 3em;
+    letter-spacing: 3px;
+    max-width: 30ch;
+}
+
+.contact-icons {
+    position: absolute;
+    color: #7d674e;
+    margin-top: 20px;
+    left: 45vw;
+}
+
+.icons{
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .contact-text h1{
+        font-size: 2.2em;
+        letter-spacing: 2.4px;
+    }
+
+    .contact-icons {
+    position: absolute;
+    color: #7d674e;
+    margin-top: 20px;
+    left: 35vw;
+    }
+
+}

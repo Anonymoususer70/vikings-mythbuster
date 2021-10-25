@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+@font-face {
+    font-family: 'Norse';
+    src: url('../Fonts/Norse.woff2') format('woff2'),
+        url('../Fonts/Norse.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NorseBold';
+    src: url('../Fonts/Norse-Bold.woff2') format('woff2'),
+        url('../Fonts/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+.about-section{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-color: #dfd8ae;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+}
+
+.about-text{
+    /* padding-left: 35px; */
+    margin-bottom: 100px;
+}
+
+.about-text h1{
+    font-family: "NorseBold", sans-serif;
+    color: #7d674e;
+    font-size: 3em;
+    padding-left: 35px;
+    letter-spacing: 3px;
+    max-width: 30ch;
+}
+
+.about-text p{
+    font-family: "Norse", sans-serif;
+    color: #7d674e;
+    font-size: 1.7em;
+    padding-left: 35px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    max-width: 40ch;
+}
+
+.about-img img{
+    height: 60vh;
+    border-radius: 10px;
+}
+
+.about-img{
+    display: flex;
+    margin-left: 60px;
+    margin-top: 80px;
+}
+
+.about-btn{
+    position: absolute;
+    margin-top: 40px;
+    padding-left: 35px;
+}
+
+.about-btn button{
+    font-family: "NorseBold", sans-serif;
+    font-size: 1.4em;
+    color: black;
+    background-color: #a79076;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 13px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+    .about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-section{
+        height: 100vh;
+        width: 100vw;
+     }
+
+    .about-text{
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
+
+    .about-text h1{
+        font-size: 2.5em;
+        padding-left: 20px;
+    }
+
+    .about-text p{
+        padding-left: 20px;
+        font-size: 1.2em;
+    }
+
+    .about-img img{
+        height: 30vh;
+        width: 85vw;
+    }
+
+    .about-btn{
+        margin-left: -15px;
+    }
+
+    .about-img{
+        margin-left: -4.2vw;
+        margin-top: 100px;
+    }
+}
