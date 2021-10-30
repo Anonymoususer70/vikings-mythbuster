@@ -7,8 +7,9 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <h1 className ="text-red-900">Heloo</h1>
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <Home />
           </Route>
 

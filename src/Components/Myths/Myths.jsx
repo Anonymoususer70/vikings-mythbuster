@@ -2,7 +2,7 @@ import "./Myths.css"
 
 function Myths() {
     return (
-        <div>
+        <div className="heading text-xl">
             This is myths page
         </div>
     )
