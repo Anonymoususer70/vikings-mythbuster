@@ -3,6 +3,11 @@ import logo from '../Images/logo.png'
 import MenuIcon from '@mui/icons-material/Menu';
 import {useState} from "react"
 import CloseIcon from '@mui/icons-material/Close';
+import {
+    BrowserRouter as Router,
+    Link
+  } from "react-router-dom";
+
 
 function Navbar() {
 
@@ -22,10 +27,12 @@ function Navbar() {
                 </div>
 
                 <div className="nav-links" id={ShowNav ? "hidden" : ""}>
-                   <a href="/"><li>Home</li></a>
-                   <a href="/"><li>About</li></a>
-                   <a href="/"><li>Contacts</li></a>
-                   <a href="/"><li>Myths</li></a>
+                    <Router>
+                        <Link to="/"><li>Home</li></Link>
+                        <Link to="/about"><li>About</li></Link>
+                        <Link to="/contacts"><li>Contacts</li></Link>
+                        <Link to="/myths"><li>Myths</li></Link>
+                    </Router>
                 </div>
                 
                 </ul>           

@@ -3,7 +3,7 @@ import aboutImg from '../Images/about-img.jpg'
 
 function About() {
     return (
-        <section className="about-section">
+        <section className="about-section" id="about">
             <article className = "about">
                 <div className="about-text">
                     <h1>What's the purpose of this website?</h1>

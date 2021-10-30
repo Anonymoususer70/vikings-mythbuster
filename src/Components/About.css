@@ -35,7 +35,6 @@
 }
 
 .about-text{
-    /* padding-left: 35px; */
     margin-bottom: 100px;
 }
 
@@ -49,13 +48,14 @@
 }
 
 .about-text p{
-    font-family: "Norse", sans-serif;
+    font-family: "Cinzel", sans-serif;
     color: #7d674e;
-    font-size: 1.7em;
+    font-size: 1.2em;
     padding-left: 35px;
     margin-top: 20px;
     letter-spacing: 2px;
     max-width: 40ch;
+    font-weight: 500;
 }
 
 .about-img img{
@@ -86,7 +86,73 @@
     cursor: pointer;
 }
 
-@media only screen and (max-width: 480px) {
+/* @media only screen and (max-width: 1200px){
+    .about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-text h1{
+        font-size: 3.2em;
+        margin-left: -100px;
+    }
+
+    .about-text p{
+        margin-left: -100px;
+        font-size: 1.5em;
+    }
+
+    .about-btn{
+        margin-left: -100px;
+    }
+
+    .about-img img{
+        height: 35vh;
+        width: 80vw;
+    }
+    
+    .about-img{
+        margin-left: 5vw;
+        margin-top: 50px;
+    }
+} */
+
+@media only screen and (max-width: 768px){
+    .about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-text h1{
+        font-size: 3.2em;
+        padding-left: 70px;
+    }
+
+    .about-text p{
+        padding-left: 70px;
+        font-size: 1.5em;
+    }
+
+    .about-btn{
+        margin-left: 35px;
+    }
+    
+    .about-img{
+        margin-left: -1vw;
+        margin-top:50px;
+    }
+
+    .about-img img{
+        height: 35vh;
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 580px) {
     .about{
         display: flex;
         flex-direction: column;
@@ -111,7 +177,12 @@
 
     .about-text p{
         padding-left: 20px;
-        font-size: 1.2em;
+        font-size: 0.9em;
+    }
+
+    .about-img{
+        margin-left: -4.2vw;
+        margin-top: 100px;
     }
 
     .about-img img{
@@ -122,9 +193,5 @@
     .about-btn{
         margin-left: -15px;
     }
-
-    .about-img{
-        margin-left: -4.2vw;
-        margin-top: 100px;
-    }
+    
 }

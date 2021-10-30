@@ -35,12 +35,12 @@
 
 .contact-icons {
     position: absolute;
-    color: #7d674e;
     margin-top: 20px;
     left: 45vw;
 }
 
 .icons{
+    color: #7d674e;
     padding-left: 15px;
     cursor: pointer;
 }
@@ -54,7 +54,6 @@
 
     .contact-icons {
     position: absolute;
-    color: #7d674e;
     margin-top: 20px;
     left: 35vw;
     }
