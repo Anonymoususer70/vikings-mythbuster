@@ -4,15 +4,6 @@
 }
 
 @font-face {
-    font-family: 'Norse';
-    src: url('../../Fonts/Norse.woff2') format('woff2'),
-        url('../../Fonts/Norse.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
     font-family: 'NorseBold';
     src: url('../../Fonts/Norse-Bold.woff2') format('woff2'),
         url('../../Fonts/Norse-Bold.woff') format('woff');
@@ -21,7 +12,7 @@
     font-display: swap;
 }
 
-.main{
+.myths{
     height: 100vh;
     background-image: url("../../Images/page-bg.jpg");
     background-size: cover;
@@ -32,4 +23,8 @@
 .heading h1{
     font-family: "NorseBold", sans-serif;
     color: #66441d;
+}
+
+.desc{
+    font-family: "Cinzel", sans-serif;
 }

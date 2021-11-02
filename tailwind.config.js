@@ -2,6 +2,9 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    fontFamily:{
+      'cinzel':['Cinzel']
+    },
     screens: {
       '2xl': {'max': '1535px'},
       // => @media (max-width: 1535px) { ... }
