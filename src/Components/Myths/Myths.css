@@ -12,14 +12,6 @@
     font-display: swap;
 }
 
-.myths{
-    height: 100vh;
-    background-image: url("../../Images/page-bg.jpg");
-    background-size: cover;
-    width: 100vw;
-
-}
-
 .heading h1{
     font-family: "NorseBold", sans-serif;
     color: #66441d;
